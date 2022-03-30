@@ -1,0 +1,17 @@
+<assembly>
+	<id>assembly</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>dist</directory>
+			<outputDirectory>dist</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${basedir}/target/build</directory>
+			<outputDirectory>dist</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
